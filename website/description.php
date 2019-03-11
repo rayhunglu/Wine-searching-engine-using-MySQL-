@@ -17,26 +17,25 @@ if ($mysqli->connect_errno) {
 		<link href="css/description.css?v=1.44" rel="stylesheet" />
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar transparent navbar-fixed-top">
 			<div class="container-fluid">
 			<div class="navbar-header"><button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-6" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span></button><a class="navbar-brand" href="./index.html">OSU CS540</a></div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-			<ul class="nav navbar-nav navbar-right">
+			<!-- <ul class="nav navbar-nav navbar-right">
 				<li><a href="helper.html">Helper</a></li>
-			</ul>
+			</ul> -->
 			</div>
 			</div>
 		</nav>
 
 		<div class="intro-header">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="intro-message">
-						<h1>Top 100 Wine Recommandation</h1>
+				<div class="col-lg-12">
+					<div class="intro-message">
+					<h1>Top 100 Wine Recommandation</h1>
 
-						<hr class="intro-divider" />
+					<!-- <hr class="intro-divider" /> -->
 						<div class="input-group">
 							<?php
 									$wineid = $_GET["id"];
@@ -50,7 +49,7 @@ if ($mysqli->connect_errno) {
 										exit;
 									}
 							?>
-							<table width="700" border="1" align="center">
+							<table width="700" border="1" align="left">
 							<tr>
 								<td >Wine</td>
 								<td >description</td>
@@ -80,18 +79,12 @@ if ($mysqli->connect_errno) {
 								}
 							?>
 						</div>
-						&nbsp;
-						<div id="msg"></div>
-						</div>
+					<!-- &nbsp; -->
+					<!-- <div id="msg"></div> -->
 					</div>
 				</div>
 			</div>
 		</div>
-
-		
-		<script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-		<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js">
-		</script><script src="js/index.js"></script>
 	</body>
 	<!-- <script src="index.php"></script> -->
 </html>
